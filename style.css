@@ -80,9 +80,10 @@ body {
 }
 
 .logo-section div:nth-of-type(2) {
-    margin-bottom: 10px;
+    padding: 15% 0 10px 0;
     text-align: center;
     color: white;
+    background: linear-gradient(0deg, black, rgba(0, 0, 0, 0));
 }
 
 .logo-section :link, .logo-section :visited {

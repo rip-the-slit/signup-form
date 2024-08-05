@@ -59,6 +59,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 0;
 }
 
 .logo-section div:first-of-type {
@@ -67,7 +69,6 @@ body {
     color: white;
     display: flex;
     align-items: center;
-    padding: 10px 3px;
 }
 
 #logo {

@@ -55,7 +55,7 @@ body {
     width: 40vw;
     height: 100vh;
     background: url(./trophim-lapteff-tzs6YfTZ2ps-unsplash.jpg);
-    background-size: contain;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -63,19 +63,16 @@ body {
 
 .logo-section div:first-of-type {
     font-family: "Norse", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 80px;
+    font-size: 320%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.336);
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 5px;
-    margin-top: 20%;
+    padding: 10px 3px;
 }
 
 #logo {
     display: inline-block;
-    width: 20%;
+    width: 15%;
     height: fit-content;
 }
 

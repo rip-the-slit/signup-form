@@ -87,3 +87,16 @@ body {
 .logo-section :link, .logo-section :visited {
     color: white;
 }
+
+.form-section input {
+    display: block;
+}
+
+.form-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0;
+}

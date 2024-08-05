@@ -91,6 +91,7 @@ body {
 
 .form-section {
     --shadow-color: #dbdddc;
+    --border-color: #E5E7EB;
     background-color: #f8fbfb;
     display: flex;
     flex-direction: column;
@@ -101,9 +102,13 @@ body {
     display: block;
     font-size: 15px;
     width: 220px;
+    border-color: var(--border-color);
+    border-style: solid;
+    border-radius: 5px;
 }
 
 form {
+    color: #262f3d;
     background-color: white;
     padding: 30px 50px;
     padding-top: 10px;
@@ -125,4 +130,10 @@ form > h1 {
     justify-content: space-between;
     flex: 0;
     gap: 20px;
+}
+
+.form-section label {
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 0.8rem;
 }

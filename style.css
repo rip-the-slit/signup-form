@@ -54,7 +54,8 @@ body {
 .logo-section {
     width: 40vw;
     height: 100vh;
-    background: blue;
+    background: url(./trophim-lapteff-tzs6YfTZ2ps-unsplash.jpg);
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

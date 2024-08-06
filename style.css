@@ -126,6 +126,10 @@ form input:focus {
 
 }
 
+form input:invalid {
+  border-color: red;
+}
+
 form > h1 {
     margin-top: 0;
     margin-bottom: 20px;

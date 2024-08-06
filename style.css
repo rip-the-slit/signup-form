@@ -97,6 +97,9 @@ body {
     flex-direction: column;
     width: 60vw;
 }
+.form-section li {
+  position: relative;
+}
 
 .form-section input {
     display: block;
@@ -128,6 +131,27 @@ form input:focus {
 
 form input:invalid {
   border-color: red;
+}
+
+form input + div::before {
+  color: red;
+  display: block;
+  content: "! That's not right";
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 0.8rem;
+  position: absolute;
+  right: 20px;
+  top: 4px;
+  opacity: 0;
+  transition: opacity ease-in-out 100ms,
+              right ease-in 80ms
+  ;
+}
+
+form input:invalid:focus + div::before {
+  opacity: 1;
+  right: 0;
 }
 
 form > h1 {

@@ -121,6 +121,9 @@ form {
 form input:focus {
     outline-color: transparent;
     outline-style: solid;
+    border-color: #7172a7;
+    box-shadow: 3px 3px 10px var(--shadow-color);
+
 }
 
 form > h1 {

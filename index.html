@@ -27,32 +27,32 @@
             <ul>
                 <li>
                     <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name" pattern="[^\W\d]*">
+                    <input type="text" id="first-name" name="first-name" pattern="[a-zA-Z\s]+">
                     <div></div>
                 </li>
                 <li>
                     <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name" pattern="[^\W\d]*">
+                    <input type="text" id="last-name" name="last-name" pattern="[a-zA-Z\s]+">
                     <div></div>
                 </li>
                 <li>
                     <label for="email">EMAIL</label>
-                    <input type="text" id="email" name="email">
+                    <input type="text" id="email" name="email" pattern="[a-zA-Z][\w]*@\w*.[a-zA-Z]+">
                     <div></div>
                 </li>
                 <li>
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="text" id="phone" name="phone">
+                    <input type="text" id="phone" name="phone" pattern="\d{10}">
                     <div></div>
                 </li>
                 <li>
                     <label for="password">PASSWORD</label>
-                    <input type="text" id="password" name="password">
+                    <input type="text" id="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[?._~#@])[a-zA-Z\d?._~#@]{8,}">
                     <div></div>
                 </li>
                 <li>
                     <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="text" id="confirm-password" name="confirm-password">
+                    <input type="text" id="confirm-password" name="confirm-password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[?._~#@])[a-zA-Z\d?._~#@]{8,}">
                 </li>
             </ul>
         </form>

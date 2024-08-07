@@ -202,3 +202,14 @@ button[form="signup"] {
   background-color: #7172a7;
   box-shadow: 3px 3px 10px var(--shadow-color);
 }
+
+.form-section .login {
+  margin-left: 50px;
+  font-size: 16px;
+}
+
+.form-section .login a:link,
+.form-section .login a:visited {
+  color: #7172a7;
+  text-decoration: none;
+}

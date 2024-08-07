@@ -33,18 +33,22 @@
                 <li>
                     <label for="last-name">LAST NAME</label>
                     <input type="text" id="last-name" name="last-name" pattern="[^\W\d]*">
+                    <div></div>
                 </li>
                 <li>
                     <label for="email">EMAIL</label>
                     <input type="text" id="email" name="email">
+                    <div></div>
                 </li>
                 <li>
                     <label for="phone">PHONE NUMBER</label>
                     <input type="text" id="phone" name="phone">
+                    <div></div>
                 </li>
                 <li>
                     <label for="password">PASSWORD</label>
                     <input type="text" id="password" name="password">
+                    <div></div>
                 </li>
                 <li>
                     <label for="confirm-password">CONFIRM PASSWORD</label>
@@ -56,4 +60,21 @@
         <div></div>
     </section>
 </body>
+<script>
+    const divs = document.querySelectorAll("form li div");
+    const inputs = document.querySelectorAll("form li input");
+
+    let makeVisible = () => {
+        divs.forEach((div) => {
+            div.setAttribute("style", "visibility: visible;")
+        })
+        inputs.forEach((input) => {
+            input.removeEventListener("focus", makeVisible)
+        })
+    }
+
+    inputs.forEach((input) => {
+        input.addEventListener("focus", makeVisible)
+    })
+</script>
 </html>

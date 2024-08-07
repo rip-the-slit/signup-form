@@ -95,8 +95,18 @@ body {
     background-color: #f8fbfb;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 60vw;
 }
+
+.form-section .signup-pls {
+  margin-left:50px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 .form-section li {
   position: relative;
 }

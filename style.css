@@ -144,7 +144,7 @@ form input + div::before {
 form li div::before {
   color: red;
   display: block;
-  content: "That's not right !";
+  content: attr(data-help);
   letter-spacing: 1px;
   font-weight: 500;
   font-size: 0.8rem;
